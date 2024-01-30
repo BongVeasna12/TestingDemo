@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+
+    & main{
+        display: grid;
+        gap: 10px;
+        & .square{
+            width: 200px;
+            height: 100px;
+            font-size: 3rem;
+            display:grid;
+            place-content:center;
+        }
+
+        & .square:nth-child(1){
+            background-color: red;
+            /* transform: translate(100%, 100px); */
+            /* transform: rotate(45deg); */
+            /* transform: matrix(1,2,3,4,5,6); */
+            animation: rotate 2s 3;
+          
+        }
+        & .square:nth-child(2){
+            background-color: rgb(31, 184, 226);
+            /* transform:translate(100px, 100px);
+            transform: rotate(45deg); */
+            /* animation: rotate 3s 3; */
+
+          
+        }
+        & .square:nth-child(3){
+            background-color: rgb(188, 174, 174);
+            /* transform:translate(100%, 100px); */
+            /* transform: rotate(45deg); */
+            /* transform: scale(1,.6); */
+            /* transform: skewY(45deg); */
+            animation-name:slide;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+            
+        }
+        & .square:hover{
+            /* background-color: aqua;
+            transform: scale(1.4);
+            margin-right: 200px; */
+        }
+        & .square{
+            /* transition-property: all;
+            transition-duration: 1s; */
+            /* transition-delay: .1s; */
+            /* transition-timing-function: linear; */
+            
+        }
+
+       
+    }
+     
+}
+@keyframes rotate {
+    0% {
+        transform: translateX(0) rotate(0);
+    }
+    33%{
+        transform: translateX(50%) rotate(45deg);
+        background-color: aqua;
+    }
+    66%{
+        transform: translateX(100%) rotate(180deg);
+        background-color: bisque;
+    }
+    100%{
+        transform: translateX(-100%);
+        
+    }
+    
+}
+

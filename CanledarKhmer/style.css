@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+.container-item{
+    max-width: 80vh;
+    background-color: blue !important;
+}
+
+

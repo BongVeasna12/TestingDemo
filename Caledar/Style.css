@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--c-theme-primary: #008FFD;
+	--c-theme-primary-accent: #CBE8FF;
+	--c-bg-primary: #D6DAE0;
+	--c-bg-secondary: #EAEBEC;
+	--c-bg-tertiary: #FDFDFD;
+	--c-text-primary: #1F1F25;
+	--c-text-secondary: #999FA6;
+}
+
+body {
+   
+	line-height: 1.5;
+	max-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(181, 192, 214);
+	color: var(--c-text-primary);
+	padding-top: 20px;
+}
+
+
+
+
+.datepicker {
+	background-color: #000	;
+	border-radius: 20px;
+	width: 100%;
+	max-width: 900vh;;
+	background-color: var(--c-bg-tertiary);
+	box-shadow: 0 0 2px 0 rgba(#dc2121, .5), 0 5px 10px 0 rgba(#000, .1);
+	padding: 1rem;
+}.section > h1{
+    text-align: center;
+	color: rgb(26, 7, 199);
+}
+
+.datepicker-top > btn-group >{
+    
+	margin-bottom: 1rem;
+}
+
+.btn-group {
+	width: 100%;
+	justify-content: center;
+    text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+	margin-top: -.5rem;
+}
+
+.tag {
+	
+	margin-right: .5rem;
+	margin-top: .5rem;
+	border: 0;
+	background-color: var(--c-bg-secondary);
+	border-radius: 10px;
+	padding: .5em .75em;
+	font-weight: 500;
+	&:hover{
+		color:rgb(104, 15, 249);
+		background-color: #CBE8FF;
+	}
+}
+/* body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+} */
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border-radius: 8px ;
+	background-color: #ACC8E5;
+}
+
+.img-item img {
+	border-radius: 6px;
+	max-width: 500%;
+	
+}
+img{
+	width:300px;
+	height: 200px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 60%;
+	height: 600%;
+	margin-left: 25px;
+}
+
+th ,td{
+	padding: 4px;
+	text-align: center;
+}
+thead >th , th {
+	margin-top: 100px;
+	color: rgb(32, 26, 198);
+	
+}
+tbody > tr > td{
+	font-size: 18px;
+	margin: 30px;
+	color: #112A46 ;
+	&:hover{
+		border-radius: 390px !important ;
+		color: rgb(26, 7, 199) !important;
+		background-color: rgb(165, 185, 239) 	;
+}
+}
+.holiday{
+	color: rgb(251, 6, 6,1);
+	&:hover{
+		background-color: rgb(243, 54, 54) !important;
+		color: #0000 important;
+	}
+	
+}
+

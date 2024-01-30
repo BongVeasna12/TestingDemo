@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Fantasy Land";
+    src: url(../font/Fantasy\ Land.ttf);
+}
+
+
+body{
+    background-image: url(https://dce0qyjkutl4h.cloudfront.net/wp-content/uploads/2023/01/Smart-Watch-app-blog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top ;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+      background-color: whitesmoke;
+      color:red; 
+
+}
+
+h1:hover:before{
+    content: "Content";
+    color: blue;
+}
+h1:hover::after{
+    content: "Hover";
+    color: blue;
+}
+
+.attri-contaner{
+    &{
+        display: block;
+        margin-bottom: 10px;
+    }
+    &
+        a[href="http"]{
+            color: red;
+        }
+    
+    
+    &
+        a[href^="https"]::after{
+            content: "Content";
+            color: blue;
+        }
+
+}
+
+.text-container{
+    background-color: beige;
+    margin: 10px;
+    padding: 16px;
+    &{
+         color: blue;
+         text-align: center;
+         text-decoration: underline;
+         text-transform: uppercase;
+         letter-spacing: 5px;
+         word-spacing: 8px;
+         font-family: Fantasy Land;
+         
+    }
+    & p{
+        text-align: center;
+        color: greenyellow;
+        text-decoration:line-through;
+    }
+}
+.Table{
+    margin-top: 20px;
+  
+    & table {
+        /* border: 1px solid black; */
+        border-collapse: collapse; 
+        margin: 0 auto;
+
+    }
+    & th{
+        background-color: red;
+    }
+    & tbody > tr:nth-child(odd){
+        background-color: aqua;
+    }
+   & th, td{
+     padding: 10px;
+   }
+
+   & tbody > tr:hover{
+    background-color: greenyellow;
+    color: white;
+   }
+   & tbody > tr > td:hover {
+    background-color: yellow;
+    color: azure;
+   }
+   & table > thead > tr >th:hover{
+    background-color: blue;
+    color: white;
+}
+}

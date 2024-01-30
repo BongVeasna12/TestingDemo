@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+            & h1{
+                text-align: center;
+                display: grid;
+                font-size: 4rem;
+                & span{
+                    color: aqua;
+                }
+            }
+                h1:nth-child(1){
+                    display: block;
+                }
+            @media (min-width: 576px) {
+                body{
+                    & h1:nth-child(1){
+                        display:none ;  
+                    }
+                    &{
+                        h1:nth-child(2){
+                            display: block; 
+                        }
+                    }
+                }  
+            }
+            @media (min-width: 768px) {
+        body {
+          & h1:nth-child(2) {
+            display: none;
+          }
+
+          & h1:nth-child(3) {
+            display: block;
+          }
+        }
+      }
+
+      @media (min-width: 992px) {
+        body {
+          & h1:nth-child(3) {
+            display: none;
+          }
+
+          & h1:nth-child(4) {
+            display: block;
+          }
+        }
+      }
+
+            @media (min-width: 1200px) {
+        body {
+          & h1:nth-child(4) {
+            display: none;
+          }
+
+          & h1:nth-child(5) {
+            display: block;
+          }
+        }
+      }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Defaut Screen </h1>
+    <h1>Mobile Screeen <span>576px</span></h1>
+    <h1>Tablet small Screeen <span>768px</span></h1>
+    <h1>Tablet larg Screeen <span>992px</span></h1>
+    <h1>Laptop Screeen <span>120px</span></h1>
+</body>
+</html>
